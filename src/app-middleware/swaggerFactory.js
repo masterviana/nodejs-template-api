@@ -12,7 +12,7 @@ module.exports = function swaggerFactory() {
       version: pkgJSON.version,
       description: pkgJSON.description,
     },
-    basePath: '/api',
+    basePath: '/api/v1',
   };
   const swaggerOptions = {
     swaggerDefinition,

@@ -52,11 +52,28 @@ module.exports = router;
  *      commit:
  *        type: string
  *        description: The commit hash
+ *  todo:
+ *    properties:
+ *      title:
+ *        type: string
+ *        description: Description of the To Do
+ *      description:
+ *        type: string
+ *        description: Todo Description
+ *      author:
+ *        type: string
+ *        description: The author of that todo
+ *      state:
+ *        type: string
+ *        description: the state of that todo [ative, delete, completed]
+ *      tags:
+ *        type: array
+ *        description: string arrays representing all the tags of the todo tags
  */
 
 /**
  * @swagger
- * /:
+ * /getRoot:
  *  get:
  *    tags:
  *      - GetRoot
@@ -68,5 +85,4 @@ module.exports = router;
  *        description: The API information
  *        schema:
  *          $ref: '#/definitions/apiInfo'
- *
  */
